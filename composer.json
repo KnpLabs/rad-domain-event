@@ -1,0 +1,33 @@
+{
+    "name": "knplabs/rad-domain-event",
+    "description": "Provide RAD Domain Event component",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "KNP Labs",
+            "email": "hello@knplabs.com"
+        }
+    ],
+    "require": {
+        "symfony/http-kernel": "^2.6",
+        "symfony/dependency-injection": "^2.6",
+        "symfony/config": "^2.6",
+        "doctrine/common": "^2.5"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "^2.2"
+    },
+    "autoload": {
+        "psr-0": {
+            "Knp\\Rad\\DomainEvent": "src/"
+        }
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
