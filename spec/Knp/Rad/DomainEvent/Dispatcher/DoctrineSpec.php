@@ -21,7 +21,7 @@ class DoctrineSpec extends ObjectBehavior
         $this->shouldHaveType('Knp\Rad\DomainEvent\Dispatcher\Doctrine');
     }
 
-    function it_pop_events_of_a_post_persisted_entity(
+    function it_pops_events_of_a_post_persisted_entity(
         LifecycleEventArgs $event,
         Provider $entity,
         PostFlushEventArgs $postFlushEvent,
@@ -39,7 +39,7 @@ class DoctrineSpec extends ObjectBehavior
         $this->postFlush($postFlushEvent);
     }
 
-    function it_pop_events_of_a_post_loaded_entity(
+    function it_pops_events_of_a_post_loaded_entity(
         LifecycleEventArgs $event,
         Provider $entity,
         PostFlushEventArgs $postFlushEvent,

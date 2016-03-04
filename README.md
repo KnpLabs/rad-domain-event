@@ -1,5 +1,9 @@
 # Knp Rad Domain Event
-A lightweight domain event implementation for Doctrine2.
+[![Build Status](https://travis-ci.org/KnpLabs/rad-domain-event.svg?branch=master)](https://travis-ci.org/KnpLabs/rad-domain-event)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/KnpLabs/rad-domain-event/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/KnpLabs/rad-domain-event/?branch=master)
+[![Latest Stable Version](https://poser.pugx.org/knplabs/rad-domain-event/v/stable)](https://packagist.org/packages/knplabs/rad-domain-event) [![Total Downloads](https://poser.pugx.org/knplabs/rad-domain-event/downloads)](https://packagist.org/packages/knplabs/rad-domain-event) [![Latest Unstable Version](https://poser.pugx.org/knplabs/rad-domain-event/v/unstable)](https://packagist.org/packages/knplabs/rad-domain-event) [![License](https://poser.pugx.org/knplabs/rad-domain-event/license)](https://packagist.org/packages/knplabs/rad-domain-event)
+
+A lightweight domain event pattern implementation for Doctrine2.
 
 ## Installation
 
@@ -8,7 +12,7 @@ With composer :
 $ composer require knplabs/rad-domain-event
 ```
 
-If you are using symfony2 you can update your `app/AppKernel.php` file:
+If you are using Symfony you can update your `app/AppKernel.php` file:
 
 ```php
 public function registerBundles()
@@ -30,7 +34,6 @@ use Knp\Rad\DomainEvent;
 
 class MyEntity implements DomainEvent\Provider
 {
-
     use DomainEvent\ProviderTrait;
 }
 ```
@@ -46,7 +49,7 @@ class MyEntity implements DomainEvent\Provider
     // ...
     public function myFunction($arg) {
         // your function behavior
-        $this->raise('myEventName', ['anyProperty' => $anyValue]);
+        $this->raise('myEventName', ['anyKey' => $anyValue]);
     }
 }
 ```
