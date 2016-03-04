@@ -9,10 +9,10 @@
         }
     ],
     "require": {
-        "symfony/http-kernel": "^2.6",
-        "symfony/dependency-injection": "^2.6",
-        "symfony/config": "^2.6",
-        "doctrine/common": "^2.5"
+        "symfony/http-kernel": "^2.6 || ~3.0",
+        "symfony/dependency-injection": "^2.6 || ~3.0",
+        "symfony/config": "^2.6 || ~3.0",
+        "doctrine/orm": "^2.5"
     },
     "require-dev": {
         "phpspec/phpspec": "^2.2"
