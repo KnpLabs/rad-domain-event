@@ -15,7 +15,7 @@
         "doctrine/orm": "^2.5"
     },
     "require-dev": {
-        "phpspec/phpspec": "^2.2"
+        "phpspec/phpspec": "^2.4"
     },
     "autoload": {
         "psr-0": {
