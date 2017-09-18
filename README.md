@@ -5,6 +5,10 @@
 
 A lightweight domain event pattern implementation for Doctrine2.
 
+# Official maintainers:
+
+* [@Einenlum](https://github.com/Einenlum)
+
 ## Installation
 
 With composer :
