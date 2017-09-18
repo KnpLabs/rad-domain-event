@@ -23,11 +23,20 @@ class Event extends BaseEvent
 
     public function __get($name)
     {
-        if (!array_key_exists($name, $this->properties)) {
-            throw new \RuntimeException("Property '$name' does not exist on event '{$this->eventName}'");
+        if (!$this->has($name)) {
+            throw new \RuntimeException(sprintf(
+                'Property %s does not exist on event %s',
+                $name,
+                $this->eventName
+            ));
         }
 
         return $this->properties[$name];
+    }
+
+    public function has($name)
+    {
+        return array_key_exists($name, $this->properties);
     }
 
     public function setSubject(Provider $subject)
