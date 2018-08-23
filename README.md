@@ -7,7 +7,8 @@ A lightweight domain event pattern implementation for Doctrine2.
 
 # Official maintainers:
 
-* [@Einenlum](https://github.com/Einenlum)
+* [@AntoineLelaisant](https://github.com/AntoineLelaisant)
+* [@PedroTroller](https://github.com/PedroTroller)
 
 ## Installation
 
