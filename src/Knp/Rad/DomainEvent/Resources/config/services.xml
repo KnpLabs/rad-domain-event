@@ -17,6 +17,7 @@
             <tag name="doctrine.event_listener" event="postRemove" />
             <tag name="doctrine.event_listener" event="postFlush" />
             <tag name="doctrine.event_listener" event="postLoad" />
+            <tag name="doctrine.event_listener" event="onClear" />
         </service>
 
     </services>

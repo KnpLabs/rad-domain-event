@@ -54,6 +54,11 @@ class Doctrine
         }
     }
 
+    public function onClear()
+    {
+        $this->entities = [];
+    }
+
     private function keepProvider(LifecycleEventArgs $event)
     {
         $entity = $event->getEntity();
